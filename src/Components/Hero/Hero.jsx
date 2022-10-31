@@ -1,9 +1,15 @@
 import React from 'react';
 import Header from '../Header/Header';
+import HeroImage from '../../assets/hero_image.png';
+import HeroImageBack from '../../assets/hero_image_back.png';
+import Heart from '../../assets/heart.png';
+import Calories from '../../assets/calories.png';
 import './Hero.css';
+
 const Hero = () => {
 	return (
 		<div className='hero'>
+			{/* NOTE:left side */}
 			<div className='left-hero'>
 				<Header />
 				<div className='the-best-ad'>
@@ -46,7 +52,30 @@ const Hero = () => {
 					<button className='btn'>Learn more</button>
 				</div>
 			</div>
-			<div className='right-hero'>right side</div>
+			{/* NOTE:right side */}
+			<div className='right-hero'>
+				<button className='btn'>Join Now</button>
+				<div className='heart-rate'>
+					<img src={Heart} alt='heart icon' />
+					<span>Heart Rate</span>
+					<span>116 bpm</span>
+				</div>
+				{/* hero images  */}
+				<img src={HeroImage} className='hero-image' alt='hero background' />
+				<img
+					src={HeroImageBack}
+					className='hero-image-back'
+					alt='hero background pattern'
+				/>
+				{/* calories  */}
+				<div className='calories'>
+					<img src={Calories} alt='calories' />
+					<div className=''>
+						<span>Calories burned </span>
+						<span>220 kcal</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
