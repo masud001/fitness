@@ -1,8 +1,10 @@
 import './App.css';
 import Hero from './Components/Hero/Hero';
+import Join from './Components/Join/Join';
 import Plans from './Components/Plans/Plans';
 import Programs from './Components/programs/Programs';
 import Reasons from './Components/Reasons/Reasons';
+import Testimonials from './Components/Testimonials/Testimonials';
 function App() {
 	return (
 		<div className='App'>
@@ -10,6 +12,8 @@ function App() {
 			<Programs />
 			<Reasons />
 			<Plans />
+			<Testimonials />
+			<Join />
 		</div>
 	);
 }
