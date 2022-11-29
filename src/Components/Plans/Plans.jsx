@@ -5,6 +5,8 @@ import { plansData } from '../../data/plansData.js';
 const Plans = () => {
 	return (
 		<div className='plans-container' id='plans'>
+			<div className='blur plans-blur-first'></div>
+			<div className='blur plans-blur-second'></div>
 			<div className='programs-header' style={{ gap: '2rem' }}>
 				<span className='stroke-text'>READY TO START </span>
 				<span>YOUR JOURNEY </span>
