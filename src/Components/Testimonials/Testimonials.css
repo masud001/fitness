@@ -68,3 +68,36 @@
     width: 1.5rem;
     cursor: pointer;
 }
+
+@media screen and (max-width:768px) {
+    .testimonials{
+        flex-direction: column;
+    }
+    .testimonial-left>:nth-child(2),
+    .testimonial-left>:nth-child(3) {
+        font-size: xx-large;
+    }
+    .testimonial-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .testimonial-right>div{
+        position: relative;
+        display: none;
+    }
+    .testimonial-right>img{
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    .testimonial-right > :last-child{
+        display: flex;
+        bottom: 0;
+        left: 0;
+    }
+    
+}
